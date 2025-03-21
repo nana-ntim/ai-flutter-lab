@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/message.dart';
 
 // API Key - Replace with your actual Gemini API key
-const String apiKey = 'AIzaSyA6E3Aer_Oi0TozjsCA5PymL-UF8dirJIE';
+const String apiKey = 'your-gemini-api-key';
 
 class ChatService {
   static const String _storageKey = 'chat_history';
@@ -15,7 +15,7 @@ class ChatService {
     try {
       // If messages is empty, return a default greeting
       if (messages.isEmpty) {
-        return "Hello! I'm your AI assistant for Flutter development. How can I help you today?";
+        return "Hello! I'm your AI assistant. How can I help you today?";
       }
 
       // Create the generative model with better configuration
